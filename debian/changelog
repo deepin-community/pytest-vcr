@@ -1,5 +1,39 @@
-template-repository (1.0-1) unstable; urgency=medium
+pytest-vcr (1.0.2-4) unstable; urgency=medium
 
-  * Initial release
+  * debian/watch: Update the GitHub URL
+  * d/control:
+    - Bump debhelper-compat level to 13
+    - Bump Standards-Version to 4.6.1
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Pierre-Elliott Bécue <peb@debian.org>  Mon, 31 Oct 2022 22:56:02 +0100
+
+pytest-vcr (1.0.2-3) unstable; urgency=low
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 02 Jun 2022 22:06:21 -0400
+
+pytest-vcr (1.0.2-2) unstable; urgency=medium
+
+  * d/control:
+    - Remove pytest and vcr from Build-Deps as no tests are run.
+    - Add a Testsuite
+  * d/rules:
+    - Cleans the override_dh_auto_test.
+
+ -- Pierre-Elliott Bécue <peb@debian.org>  Sun, 29 Dec 2019 19:48:34 +0100
+
+pytest-vcr (1.0.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #892907)
+
+ -- Pierre-Elliott Bécue <peb@debian.org>  Wed, 06 Nov 2019 00:10:30 +0100
